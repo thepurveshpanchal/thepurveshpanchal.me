@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,12 +12,17 @@
   <meta name="keywords" content="">
   <meta name="description" content="">
   <link rel="stylesheet" type="text/css" href="css/vendor.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/swiper.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body class="bg-body homepage post-template" data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
@@ -180,8 +184,10 @@
               <li><a href="#home" class="nav-link">Home</a></li>
               <li><a href="#about" class="nav-link">About</a></li>
               <li><a href="#experience" class="nav-link">Experience</a></li>
-              <li><a href="#portfolio" class="nav-link">Works</a></li>
-              <li><a href="#contact" class="nav-link">Contact</a></li>
+              <li><a href="portfolio-masonry.html" class="nav-link">Portfolio</a></li>
+              <li><a href="blog.html" class="nav-link">Blog</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+              <!-- 
               <li>
                 <a class="nav-link btn-toggle d-flex justify-content-between align-items-center collapsed"
                   data-bs-toggle="collapse" data-bs-target="#pages-collapse" aria-expanded="false">
@@ -212,59 +218,44 @@
                     </li>
                   </ul>
                 </div>
-              </li>
-              <li><a href="https://templatesjungle.gumroad.com/l/julia-onepage-portfolio" target="_blank"
-                  class="nav-link d-flex justify-content-between align-items-center fw-bold"><span>Get
-                    PRO</span> <svg width="18" height="18" viewBox="0 0 24 24">
-                    <use xlink:href="#cart"></use>
-                  </svg></a></li>
+              </li> -->
             </ul>
           </nav>
         </div>
         <div class="mt-5">
           <div class="email-links">
-            <a href="mailto:thepurveshpanchal@gmail.com" class="py-3 my-3 border-bottom d-flex">thepurveshpanchal@gmail.com</a>
+            <a href="mailto:thepurveshpanchal@gmail.com"
+              class="py-3 my-3 border-bottom d-flex">thepurveshpanchal@gmail.com</a>
           </div>
           <ul class="list-unstyled d-flex justify-content-start flex-wrap gap-3">
             <li>
-              <a href="#" class="text-dark">
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <use xlink:href="#facebook"></use>
-                </svg>
+              <a href="https://www.linkedin.com/in/thepurveshpanchal/" class="text-dark">
+                <i class="fa fa-linkedin-square fs-3" aria-hidden="true"></i>
               </a>
             </li>
             <li>
-              <a href="#" class="text-dark">
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <use xlink:href="#twitter"></use>
-                </svg>
+              <a href="https://www.instagram.com/purvesh.photos/" class="text-dark">
+                <i class="fa fa-instagram fs-3" aria-hidden="true"></i>
               </a>
             </li>
             <li>
-              <a href="#" class="text-dark">
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <use xlink:href="#youtube"></use>
-                </svg>
+              <a href="https://wa.me/918347364217?text=Hi%20there!%20I%20saw%20your%20cool%20portfolio%20and%20I%20would%20like%20to%20connect.%20My%20name%20is%20[Your Name].
+              " class="text-dark">
+                <i class="fa fa-whatsapp fs-3" aria-hidden="true"></i>
               </a>
             </li>
             <li>
-              <a href="#" class="text-dark">
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <use xlink:href="#pinterest"></use>
-                </svg>
+              <a href="https://fontawesome.com/search?q=insta&o=r&m=free" class="text-dark">
+                <i class="fa fa-github fs-3" aria-hidden="true"></i>
               </a>
             </li>
+
             <li>
               <a href="#" class="text-dark">
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <use xlink:href="#instagram"></use>
-                </svg>
+                <i class="fa fa-google fs-3" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
-          <div class="py-4 border-top">
-            <p>HTML by <a href="https://templatesjungle.com/" target="_blank">TemplatesJungle</a></p>
-          </div>
         </div>
       </div>
     </header>
@@ -313,7 +304,8 @@
                 </div>
               </div>
               <div class="col-lg-3">
-                <a href="#portfolio" class="btn btn-dark text-uppercase py-4 px-5" data-aos="fade-up" data-aos-delay="300">View All Work</a>
+                <a href="portfolio-masonry.html" class="btn btn-dark text-uppercase py-4 px-5" data-aos="fade-up"
+                  data-aos-delay="300">View All Work</a>
               </div>
             </div>
           </section>
@@ -352,17 +344,30 @@
               <div class="col-lg-6 pb-5">
                 <h2 class="display-4 txt-fx slide-up text-success">Interests</h2>
                 <div class="data-info py-3" data-aos="fade-up">
-                  <span class="meta-date">2007 - 2012</span>
-                  <h3 class="info-title">Bachelors in Engineering in Information Technology</h3>
-                  <p>Harvard School of Science and management</p>
-                </div>
-                <div class="data-info" data-aos="fade-up" data-aos-delay="100">
-                  <span class="meta-date">2013 - present</span>
-                  <h3 class="info-title">Studio Alpha.: Project Manager</h3>
-                  <p>iacentem substantiales um se sed esse haec Possit facis qui a a a patriam.</p>
+                  <ul>
+                    <li><strong>Technology Exploration:</strong><br>"Exploring the latest in DevOps, cloud computing,
+                      and web development."</li>
+                    <li><strong>Open Source Contributor:</strong><br>"Engaging in open-source projects and collaborating
+                      globally."</li>
+                    <li><strong>Continuous Learner:</strong><br>"Pursuing ongoing education through courses, workshops,
+                      and conferences."</li>
+                    <li><strong>Problem-Solving Enthusiast:</strong><br>"Thriving on solving complex challenges and
+                      optimizing processes."</li>
+                    <li><strong>Networking Advocate:</strong><br>"Active participation in tech meetups, conferences, and
+                      online forums."</li>
+                    <li><strong>Creative Web Developer:</strong><br>"Blending creativity with web development for unique
+                      user-friendly interfaces."</li>
+                    <li><strong>Digital Leadership:</strong><br>"Certified Google Cloud Digital Leader contributing to
+                      tech leadership discussions."</li>
+                    <li><strong>Research Enthusiast:</strong><br>"Staying informed through tech blogs, research papers,
+                      and articles."</li>
+                  </ul>
+
+
+
                 </div>
               </div>
-              <div class="col-lg-6 pb-5">
+              <!-- <div class="col-lg-6 pb-5">
                 <h2 class="display-4 txt-fx slide-up text-success">References</h2>
                 <div class="data-info py-3" data-aos="fade-up" data-aos-delay="200">
                   <span class="meta-date">1998 - 2004</span>
@@ -374,7 +379,7 @@
                   <h3 class="info-title">Dr. David Howard</h3>
                   <p>iacentem substantiales um se sed esse haec Possit facis qui a a a patriam.</p>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
 
@@ -382,7 +387,7 @@
             <div class="row justify-content-center mb-5">
               <div class="col-lg-6" data-aos="fade-up">
                 <span class="text-muted text-uppercase">introduction</span>
-                <h2 class="display-1 slide-up">Experienced Creative ind</h2>
+                <h2 class="display-1 slide-up">Experienced Creative Mind</h2>
                 <p>Labore accusam in modo compungi, iacentem substantiales um se sed esse haec.</p>
               </div>
             </div>
